@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fd694ccbe.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="icon.png">
+    <script src="index.js" defer></script>
+    <title>Book Library</title>
+</head>
+<body>
+
+  <div class="overlay">
+
+  
+      <!-- Header -->
+      <header class="header">
+        <h1 class="header__h1">Library 📚</h1>
+      </header>
+
+      <!-- Botón de "Add Book" -->
+      <div class="container__btn">
+        <button class="btn__add">Add book 📘</button>
+      </div>
+
+      <!-- Contenedor de toda la librería -->
+      <section class="books">
+
+        <!-- Grid con creación de cada libro -->
+        <div class="books__grid">
+
+          <!-- <div class="book">
+            <p class="book__title">"Harry Potter"</p>
+            <p class="book__author">K. K. R</p>
+            <p class="book__pages">12 pages</p>
+            <p class="book__status">Not read</p>
+            <p class="book__remove">Remove</p>
+          </div> -->
+
+        </div>
+
+
+      </section>
+
+      
+
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p class="love__p">Made with<i class="fa-solid fa-heart heart"></i>by</p><a href="https://github.com/frajmati" target="_blank" class="love__pm">frajmati</a>
+      </footer>
+
+  </div>
+
+    <div class="form__container">
+
+      
+      <!-- Formulario de libro -->
+      <form action="" class="form">
+        <i class="fa-solid fa-xmark x-mark"></i>
+        <input type="text" id="name" class="form__input form__input--title" required minlength="2" maxlength="100" placeholder="Title">
+        <input type="text" id="author" class="form__input form__input--author" required minlength="2" maxlength="25" placeholder="Author">
+    
+        <input type="number" id="pages" class="form__input form__input--pages" required min="1" max="1200" placeholder="Pages">
+    
+        <div class="checkbox">
+          <label for="status">Have you read it?</label>
+            <div class="checkbox-wrapper-10">
+              <input class="tgl tgl-flip form__input--checkbox" id="cb5 status" type="checkbox" checked />
+              <label class="tgl-btn" data-tg-off="Nope" data-tg-on="Yeah!" for="cb5 status"></label>
+            </div>
+          
+        </div>
+        
+        <input type="submit" value="Submit" class="input__submit">
+      </form>
+      
+      </div>
+
+
+  </body>
+</html>
